@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+  --light-color: #fff;
+  --gold-color:  rgb(184, 159, 19);
+  --light-color-alt: #0b0b0c;
+  --blue-background: #2369BD;
+  --primary-background-color: #050505;
+  --secondary-background-color: #0f0f0f;
+  --hover-light-color: var(--light-color);
+  --hover-dark-color: var(--primary-background-color);
+  --gradient-color: linear-gradient(
+      115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  --transparent-light-color: rgba(2, 1, 1, 0.05);
+  --transparent-dark-color: rgba(0,0,0,.75);
+  --font-family: 'Poppins', sans-serif;
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
+}
+
+                               /* Base styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: Poppins, sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--light-color-alt);
+  background-color: var(--primary-background-color);
+  letter-spacing: 1px;
+  transition: background-color .25s,color .25s;
+  -webkit-transition: background-color .25s,color .25s;
+  -moz-transition: background-color .25s,color .25s;
+  -ms-transition: background-color .25s,color .25s;
+  -o-transition: background-color .25s,color .25s;
+}
