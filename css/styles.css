@@ -9,7 +9,7 @@
   --hover-color:  rgb(184, 159, 19);
   --light-color-alt: #0b0b0c;
   --blue-background: #2369BD;
-  --primary-background-color: #141414;
+  --primary-background-color: #0e0d0d;
   --secondary-background-color: #3a3333;
   --gradient-color: linear-gradient(
       115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
@@ -52,7 +52,7 @@ img{
 }
 
 .container{
-    max-width: 1068px;
+    max-width: 1268px;
     margin: auto;
     width: 100%;
 }
@@ -61,8 +61,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--transparent-dark-color);
-    border: 1px solid white;
+    background-color: var();
     z-index: 100;
 }
 
@@ -73,11 +72,12 @@ header{
     padding: 20px 0;
 }
 .brandLogo{
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     color: var(--text-color);
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0 auto 0;
+    margin-top: 12px;
+    margin-right: auto;
 }
 .brandLogo span{
     color: coral;
@@ -91,6 +91,7 @@ header{
     padding: 8px 15px;
     background-color: var(--secondary-background-color);
     border-radius: 4rem;
+    margin-right: 1rem;
 }
 
 .searchArea .bi-search{
@@ -101,4 +102,97 @@ header{
 .searchArea .bi-search:hover{
     color: coral;
     cursor: pointer;
+}
+
+#searchInput{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  background: transparent;
+  font-size: 0.938rem;
+}
+
+.profile{
+    display: flex;
+}
+.userImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sideBar{
+    position: fixed;
+    top: 36%;
+    transform: translateY(-50%);
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.navLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b7b7b7;
+    margin-top: -24px;
+}
+
+.navLink:hover{
+    color: var(--text-color);
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+.active{
+    color: coral;
+    transition: 0.3s all linear;
+    transform: scale(1.2);
+    padding-left: 10px;
+}
+
+.navLink .bi{
+    font-size: 1.8rem;
+    margin: 5px;
+}
+
+.navLinkTitle{
+    font-size: 1rem;
+}
+
+.home{
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 9.5rem;
+    border-radius: 0.5rem;
+}
+
+.homeImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.homeText{
+    padding-left: 40px;
+}
+
+.homeTitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.homeText p{
+    font-size: 0.938rem;
+    margin: 10px 0 20px;
+    color: coral;
 }
