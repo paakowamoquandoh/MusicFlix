@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+
 
 :root{
   --text-color: #fff;
   --hover-color:  rgb(184, 159, 19);
   --light-color-alt: #0b0b0c;
   --blue-background: #2369BD;
-  --primary-background-color: #050505;
-  --secondary-background-color: #0f0f0f;
+  --primary-background-color: #141414;
+  --secondary-background-color: #3a3333;
   --gradient-color: linear-gradient(
       115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
   --transparent-light-color: rgba(2, 1, 1, 0.05);
@@ -32,10 +36,6 @@
   scroll-padding-top: 2rem;
 }
 
-html{
-  font-size: 62.5%;
-}
-
 body{
   font-family: Poppins, sans-serif;
   color: var(--text-color);
@@ -49,4 +49,56 @@ li{
 }
 img{
     width: 100%;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--transparent-dark-color);
+    border: 1px solid white;
+    z-index: 100;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.brandLogo{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0;
+}
+.brandLogo span{
+    color: coral;
+}
+.searchArea{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background-color: var(--secondary-background-color);
+    border-radius: 4rem;
+}
+
+.searchArea .bi-search{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.searchArea .bi-search:hover{
+    color: coral;
+    cursor: pointer;
 }
