@@ -1,11 +1,16 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.newMusicSwiper', {
     // Optional parameters
-    direction: 'vertical',
-    loop: true,
+    slidesPreview: 1,
+    spaceBetween: 10,
+    autoplay: {
+       delay: 755500,
+       disableOnInteraction: false,
+    },
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   
     // Navigation arrows
@@ -13,9 +18,27 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+
+    breakpoints: {
+      280:{
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      320:{
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      510:{
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      758:{
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      900:{
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
     },
   });
