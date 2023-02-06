@@ -7,7 +7,7 @@
 :root{
   --text-color: #fff;
   --hover-color:  rgb(184, 159, 19);
-  --light-color-alt: #0b0b0c;
+  --light-color-alt: #2a2a2e;
   --blue-background: #2369BD;
   --primary-background-color: #0e0d0d;
   --secondary-background-color: #3a3333;
@@ -195,4 +195,45 @@ header{
     font-size: 0.938rem;
     margin: 10px 0 20px;
     color: coral;
+}
+
+.playPreview{
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
+
+.playPreview .bi{
+    font-size: 21px;
+    background: coral;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playPreview .bi:hover{
+    background: var(--hover-color);
+}
+
+.playPreview span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--light-color-alt);
+    padding: 8px 14px;
+    border: 1px solid hsl(200, 100%, 99% / 5%);
+    margin-top: 50px;
+}
+
+.headingTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
