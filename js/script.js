@@ -42,3 +42,19 @@ const swiper = new Swiper('.newMusicSwiper', {
       }
     },
   });
+
+  // 
+  const playMusic = document.querySelector(".playTrack");
+  const video = document.querySelector(".videoContainer");
+  const demoVideo = document.querySelector("#demoMusic");
+  const closeVideo = document.querySelector(".closeDemo");
+
+  playMusic.onclick = () => {
+    video.classList.add("show");
+    demoVideo.play();
+  }
+
+  closeVideo.onclick = () => {
+    video.classList.remove("show");
+    demoVideo.pause();
+  }
