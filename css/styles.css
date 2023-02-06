@@ -252,3 +252,45 @@ header{
     height: 100%;
     object-fit: cover;
   }
+
+  .newMusicBox .newMusicText{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    overflow: hidden;
+    background: linear-gradient(8deg, hsla(240, 17%, 14%, 0.308) 14%,
+    hsla(240, 17%, 14%, 0.671) 44%);
+  }
+
+  .musicTitle{
+    font-size: 1.28rem;
+    font-weight: 600;
+  }
+
+  .genre{
+   font-size: 0.9rem; 
+   font-weight: 400;
+  }
+
+  .swipeButtons{
+    display: flex;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    position: static !important;
+    margin: 0 0 0 10px !important;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    color: var(--text-color);
+    font-size: 18px !important;
+    font-weight: 700;
+  }
