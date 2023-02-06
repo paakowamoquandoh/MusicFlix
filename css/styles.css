@@ -61,7 +61,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var();
+    background-color: var(--primary-background-color);
     z-index: 100;
 }
 
@@ -132,6 +132,7 @@ header{
     display: flex;
     flex-direction: column;
     row-gap: 2.1rem;
+    background-color: var(--primary-background-color);
 }
 
 .navLink{
@@ -231,9 +232,14 @@ header{
     padding: 8px 14px;
     border: 1px solid hsl(200, 100%, 99% / 5%);
     margin-top: 50px;
+    margin-bottom: 3rem;
 }
 
 .headingTitle{
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+.swiper-wrapper {
+   
+  }
