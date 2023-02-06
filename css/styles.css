@@ -6,6 +6,7 @@
 
 :root{
   --text-color: #fff;
+  --main-color: coral;
   --hover-color:  rgb(184, 159, 19);
   --light-color-alt: #2a2a2e;
   --blue-background: #2369BD;
@@ -126,16 +127,18 @@ header{
 
 .sideBar{
     position: fixed;
-    top: 36%;
-    transform: translateY(-50%);
-    left: 18px;
+    top: 40%;
+    transform: translateY(-60%);
+
+    left: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 2.1rem;
-    background-color: var(--primary-background-color);
+    background-color: var();
 }
 
 .navLink{
+    margin-left: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -144,7 +147,7 @@ header{
 }
 
 .navLink:hover{
-    color: var(--text-color);
+    color: coral;
     transition: 0.3s all linear;
     transform: scale(1.1);
 }
@@ -176,7 +179,7 @@ header{
 
 .homeImage{
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 100%;
     z-index: -1;
     object-fit: cover;
@@ -276,6 +279,7 @@ header{
   .genre{
    font-size: 0.9rem; 
    font-weight: 400;
+   margin-bottom: 0.5rem;
   }
 
   .swipeButtons{
@@ -294,3 +298,54 @@ header{
     font-size: 18px !important;
     font-weight: 700;
   }
+
+  /* .playSong{
+    position: absolute;
+    top: 0.8rem;
+    ri: 0.8rem;
+  } */
+
+  .popularMusic .heading{
+     padding: 10px 14px;
+  }
+
+  .musicContent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .musicContent .newMusicBox:hover .newMusicBoxImg{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .nextPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .nextButton{
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+
+  .nextButton:hover{
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+  }
+
+  .copyright{
+    display: flex;
+    margin-top: 14rem;
+  }
+
+  .foot{
+    margin-top: 3rem;
+  }
+  
+
