@@ -654,6 +654,9 @@ header{
 
 
 @media (max-width: 768px){
+  #playListen .bi{
+    display: none;
+  }
   .navLinkTitle {
     font-size: 0.7rem;
    }
@@ -698,7 +701,7 @@ header{
      padding: 20px;
   }
   .playTrack{
-    bottom: 4rem;
+    bottom: 0.5rem;
   }
   .videoBox{
     width: 94%;
@@ -709,6 +712,10 @@ header{
   .descTitle{
     font-size: 0.9rem;
   }
+  .artist{
+    margin-left: auto;
+    margin-right: auto;
+   }
 }
 
 @media (max-width: 408px){
@@ -739,5 +746,40 @@ header{
   .foot{
     margin-bottom: 3rem;
   }
+  .musicContent{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .downloadLinks{
+    grid-template-columns: 1fr;
+   }
+  
+}
+
+@media (max-width: 370px){
+   .home{
+    min-height: 300px;
+   }
+
+   .newMusicBox{
+    height: 285px;
+   }
+
+   .userImage, .playPreview .bi{
+    width: 35px;
+    height: 35px;
+   }
+   .sideBar{
+    justify-content: space-around;
+    padding: 8px 0;
+   }
+   .navLink .bi{
+     font-size: 1.4rem;
+   }
+
+   .musicDescription p{
+    text-align: justify;
+   }
+  
 }
 
