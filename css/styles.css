@@ -506,3 +506,36 @@ header{
   object-position: center;
 }
 
+.download{
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.downloadTitle{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.6rem 0;
+  color: var(--main-color);
+}
+
+.downloadLinks{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.downloadLinks a{
+  text-align: center;
+  background: var(--main-color);
+  padding: 12px 24px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  
+}
+
