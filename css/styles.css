@@ -441,7 +441,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 85%;
+    height: 90%;
     background: hsl(234, 10%, 20% / 60%);
     z-index: 400;
 }
@@ -452,7 +452,7 @@ header{
 
 .videoBox{
     position: relative;
-    width: 58%;
+    width: 68%;
 }
 
 .videoBox #demoMusic{
@@ -468,5 +468,41 @@ header{
     color: #fad648;
     margin-right: 20px;
     font-weight: 800;
+}
+
+.musicDescription{
+  margin-top: 2rem;
+}
+
+.musicDescription h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.musicDescription p{
+  max-width: 600px;
+  font-size: 0.938rem;
+  margin: 10px 0;  
+}
+
+.descHeading{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.artist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+  gap: 1rem;
+}
+
+.artistImage{
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
 }
 
