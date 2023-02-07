@@ -52,8 +52,22 @@ img{
     width: 100%;
 }
 
+html::-webkit-scrollbar{
+  width: 0.5rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+}
+
+::selection{
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
 .container{
-    max-width: 1268px;
+    max-width: 1180px;
     margin: auto;
     width: 100%;
 }
@@ -471,7 +485,7 @@ header{
 }
 
 .musicDescription{
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .musicDescription h2{
@@ -536,6 +550,139 @@ header{
   padding: 12px 24px;
   color: aliceblue;
   letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.downloadLinks a:hover{
+  background: var(--hover-color);
+}
+
+
+/* responsive media queries */
+@media (max-width: 1170px) {
+  .videoBox{
+    width: 85%;
+}
+
+  .videoContainer{    
+    height: 100%;   
+}
   
+  .foot{
+    margin-bottom: 5.72rem;
+  }
+  .sideBar{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    transform: translateY(0);
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 1px;
+    padding: 10px;
+    border-top: 1px solid hsl(200 100% 99% / 5%);
+    background: linear-gradient(8deg, hsl(240 17% 14% / 100%) 5%, hsl(240 17% 14% / 90%) 100%);
+  }
+
+  .navLink{
+    margin-left: 0px;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.navLink .bi{
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+}
+
+@media (max-width: 1060px){
+   .container{
+    margin:  0 auto;
+    width: 95%;
+   }
+}
+
+@media (max-width: 991px){
+  .newMusicBox{
+    height: 340px;
+  }
+
+  .musicContent{
+    grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+  }
+}
+
+
+@media (max-width: 888px){
+  .navBar{
+    padding: 14px 0;
+  }
+  .home{
+    min-height: 440px;
+    margin-top:4rem !important;
+  }
+  .homeText{
+    padding-left: 25px;
+  }
+  .homeTitle{
+    font-size: 1.6rem;
+  }
+  .playPreview span{
+    font-size: 0.9rem;
+  }
+  .musicTitle{
+    font-size: 1rem;
+    padding-right: 30px;
+  }
+  .playContainer{
+    min-height: 440px;
+    margin-top: 4rem !important;
+  }
+  .playTrack{
+    bottom: 14rem;
+    right: 4rem;
+  }
+  .artistBox{
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px){
+   .navBar{
+    padding: 11px 0;
+   }
+   .logo{
+    font-size: 1.2rem;
+   }
+   section{
+    padding: 2rem 0;
+   }
+   .homeImage{
+    object-position: left;
+   }
+   .tags span, .musicDescription p{
+    font-size: 0.875rem;
+   }
+   p{
+    font-size: 0.875rem;
+   }
+   .playText h2, .musicDescription h2{
+    font-size: 1.3rem;
+   }
+   .playText{
+    bottom: 10rem;
+    right: 2rem;
+   }
+}
+
+@media (max-width: 514px){
+  .home{
+    min-height: 380px;
+  }
 }
 
