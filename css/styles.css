@@ -560,6 +560,7 @@ header{
 
 /* responsive media queries */
 @media (max-width: 1170px) {
+  
   .videoBox{
     width: 85%;
 }
@@ -653,6 +654,9 @@ header{
 
 
 @media (max-width: 768px){
+  .navLinkTitle {
+    font-size: 0.7rem;
+   }
    .navBar{
     padding: 11px 0;
    }
@@ -683,6 +687,57 @@ header{
 @media (max-width: 514px){
   .home{
     min-height: 380px;
+  }
+  .heading{
+    padding: 2px 14px;
+  }
+  .headingTitle{
+    font-size: 1rem;
+  }
+  .playText{
+     padding: 20px;
+  }
+  .playTrack{
+    bottom: 4rem;
+  }
+  .videoBox{
+    width: 94%;
+  }
+  .descHeading{
+    font-size: 1.1rem;
+  }
+  .descTitle{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 408px){
+  *{
+    scroll-padding-top: 5rem;
+  }
+  .navBar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+  }
+  .searchArea{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 4px;
+    order: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .newMusicBox{
+    height: 300px;
+  }
+  .navLinkTitle {
+   font-size: 0.5rem;
+  }
+
+  .foot{
+    margin-bottom: 3rem;
   }
 }
 

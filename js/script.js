@@ -44,10 +44,10 @@ const swiper = new Swiper('.newMusicSwiper', {
   });
 
   // 
-  const playMusic = document.querySelector(".playTrack");
-  const video = document.querySelector(".videoContainer");
-  const demoVideo = document.querySelector("#demoMusic");
-  const closeVideo = document.querySelector(".closeDemo");
+  let playMusic = document.querySelector(".playTrack");
+  let video = document.querySelector(".videoContainer");
+  let demoVideo = document.querySelector("#demoMusic");
+  let closeVideo = document.querySelector(".closeDemo");
 
   playMusic.onclick = () => {
     video.classList.add("show");
