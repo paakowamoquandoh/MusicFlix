@@ -65,6 +65,64 @@ html::-webkit-scrollbar-thumb{
   background: var(--main-color);
   color: var(--text-color);
 }
+.dropBtn:active, .dropBtn:hover, .dropBtn:focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+.dropBtn::before,
+.dropBtn::after {
+  position: absolute;
+  content: "";
+}
+
+.dropBtn {
+  position: relative;
+  width: auto; height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+  .dropBtn span {         
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+  }
+
+  .dropBtn-1{
+    background-color: #000000;
+  }
+  
+  .dropBtn-1::before {
+      background-color: blue;
+      transition: 0.3s ease-out;
+    }
+    .dropBtn-1 span {
+      color: rgb(255,255,255);
+      border: 1px solid rgb(28, 31, 30);
+      transition: 0.2s 0.1s;
+    }
+    .dropBtn-1 span:hover {
+      color: blue;
+      transition: 0.2s 0.1s;
+    }
+
+      /* 1.hover-filled-slide-down */
+  .dropBtn.hover-filled-slide-down::before {
+    bottom: 0; left: 0; right: 0; 
+    height: 100%; width: 100%;
+  }
+  .dropBtn.hover-filled-slide-down:hover::before {
+    height: 0%;
+  }
+  
 
 .container{
     max-width: 1180px;
