@@ -214,15 +214,32 @@ header{
     color: coral;
 }
 
-.playPreview{
+.playPreview, .likeSong{
     display: flex;
     align-items: center;
     column-gap: 0.8rem;
     color: var(--text-color);
+    margin: 10px 0px;
+}
+
+.likeSong .like{
+  padding: 6px;
+  font-size: 20px;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like{
+  color: red;
 }
 
 .playPreview .bi{
-    font-size: 21px;
+    font-size: 24px;
     background: coral;
     width: 40px;
     height: 40px;
@@ -231,6 +248,19 @@ header{
     align-items: center;
     justify-content: center;
 }
+
+.playPreview .like{
+  font-size: 16px;
+  padding: 6px;
+  background: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .playPreview .bi:hover{
     background: var(--hover-color);
 }
