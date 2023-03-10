@@ -21,31 +21,31 @@
     <!-- Start your project here-->
     <header>
         <div class="navBar container">
-            <a class="brandLogo" href="./index.html">
+            <a class="brandLogo" href="./admin.html">
                 <p>DropSongx<span>Dj</span></p>
             </a>
 
             <div class="searchArea">
-                <input type="search" name="" id="searchInput" placeholder="Login to Search">
+                <input type="search" name="" id="searchInput" placeholder="Search Music">
                 <i class="bi bi-search"></i>
             </div>
-            <div class="">               
-                 <button class="dropBtn dropBtn-1 hover-filled-slide-down">
-                   <span>Login</span>
-                 </button>            
+            <div class="dropdown">
+                <a href="" class="profile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="userImage" src="https://e7.pngegg.com/pngimages/123/558/png-clipart-dj-illustration-disc-jockey-dj-mixer-nightclub-dj-electronics-sing-a-song-thumbnail.png" alt="">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./profile.html">View Profile</a></li>
+              <li><a class="dropdown-item" >Favourites</a></li>
+              <li><a class="dropdown-item" >Settings</a></li>
+              <li><a class="dropdown-item" >Sign Out</a></li>
+            </ul>
             </div>
-            <span style="margin: 0px 12px;">or</span>
-            <div class="">               
-                <button class="dropBtn dropBtn-1 hover-filled-slide-down">
-                  <span>Sign Up</span>
-                </button>            
-           </div>
             <div class="sideBar">
-                <a href="./index.html" class="navLink active">
+                <a href="./admin.html" class="navLink active">
                     <i class="bi bi-music-note-list"></i>
                     <span class="navLinkTitle">Home</span>
                 </a>
-                <a href="./playMusic.html" class="navLink">
+                <a href="./userPlay.html" class="navLink">
                     <i class="bi bi-folder-plus"></i>
                     <span class="navLinkTitle">New Songs</span>
                 </a>
@@ -57,14 +57,13 @@
                     <i class="bi bi-fire"></i>
                     <span class="navLinkTitle">Trending</span>
                 </a>
-                <a style="border: 1.5px solid grey;" href="" class="navLink">
-                    <span class="navLinkTitle">Sign Up</span>
+                <a href="" class="navLink">
+                    <i class="bi bi-heart"></i>
+                    <span class="navLinkTitle">Favourites</span>
                 </a>
-                <a class="navLink" href="">
-                    <span class="navLinkTitle" style="margin: 0px 12px;">or</span>
-                </a>
-                <a style="border: 1.5px solid grey;" href="" class="navLink">
-                    <span class="navLinkTitle">Login</span>
+                <a href="" class="navLink">
+                    <i class="bi bi-music-player"></i>
+                    <span class="navLinkTitle">Playlists</span>
                 </a>
             </div>
         </div>
@@ -125,14 +124,14 @@
         </div>
     </div>
 
-    <!-- <div class="download">
+    <div class="download">
         <h2 class="downloadTitle">Download Song</h2>
         <div class="downloadLinks">
             <a href="./media/music/play">240p</a>
             <a href="./media/music/play">360p</a>
             <a href="./media/music/play">480p</a>
         </div>
-    </div> -->
+    </div>
 
     
 

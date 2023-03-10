@@ -49,15 +49,15 @@ const swiper = new Swiper('.newMusicSwiper', {
   let demoVideo = document.querySelector("#demoMusic");
   let closeVideo = document.querySelector(".closeDemo");
 
-  playMusic.onclick = () => {
-    video.classList.add("show");
-    demoVideo.play();
-  }
+  // playMusic.onclick = () => {
+  //   video.classList.add("show");
+  //   demoVideo.play();
+  // }
 
-  closeVideo.onclick = () => {
-    video.classList.remove("show");
-    demoVideo.pause();
-  }
+  // closeVideo.onclick = () => {
+  //   video.classList.remove("show");
+  //   demoVideo.pause();
+  // }
 
   const likeSong = document.querySelector(".like");
 
