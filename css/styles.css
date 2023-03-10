@@ -286,7 +286,6 @@ header{
 .musicOptions{
   flex-direction: row;
   display: flex;
-  justify-content: space-evenly;
 }
 
 .playPreview, .likeSong, .shareSong{
@@ -307,6 +306,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .shareSong .share{
@@ -319,6 +319,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 
@@ -352,6 +353,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .playPreview .bi:hover{
