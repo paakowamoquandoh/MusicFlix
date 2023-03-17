@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="./css/admin.css" />
 </head>
 
 <body>
@@ -26,20 +26,20 @@
             </a>
 
             <div class="searchArea">
-                <input type="search" name="" id="searchInput" placeholder="Login to Search">
+                <input type="search" name="" id="searchInput" placeholder="Search Music">
                 <i class="bi bi-search"></i>
             </div>
-            <div class="">               
-                 <button class="dropBtn dropBtn-1 hover-filled-slide-down">
-                   <span>Login</span>
-                 </button>            
+            <div class="dropdown">
+                <a href="" class="profile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="userImage" src="https://e7.pngegg.com/pngimages/123/558/png-clipart-dj-illustration-disc-jockey-dj-mixer-nightclub-dj-electronics-sing-a-song-thumbnail.png" alt="">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./profile.html" >View Profile</a></li>
+              <li><a class="dropdown-item" >Favourites</a></li>
+              <li><a class="dropdown-item" >Settings</a></li>
+              <li><a class="dropdown-item" >Sign Out</a></li>
+            </ul>
             </div>
-            <span style="margin: 0px 12px;">or</span>
-            <div class="">               
-                <button class="dropBtn dropBtn-1 hover-filled-slide-down">
-                  <span>Sign Up</span>
-                </button>            
-           </div>
             <div class="sideBar">
                 <a href="#home" class="navLink active">
                     <i class="bi bi-music-note-list"></i>
@@ -57,14 +57,13 @@
                     <i class="bi bi-fire"></i>
                     <span class="navLinkTitle">Trending</span>
                 </a>
-                <a style="border: 1.5px solid grey;" href="#home" class="navLink">
-                    <span class="navLinkTitle">Sign Up</span>
+                <a href="#home" class="navLink">
+                    <i class="bi bi-heart"></i>
+                    <span class="navLinkTitle">Favourites</span>
                 </a>
-                <a class="navLink" href="">
-                    <span class="navLinkTitle" style="margin: 0px 12px;">or</span>
-                </a>
-                <a style="border: 1.5px solid grey;" href="#home" class="navLink">
-                    <span class="navLinkTitle">Login</span>
+                <a href="#home" class="navLink">
+                    <i class="bi bi-music-player"></i>
+                    <span class="navLinkTitle">Playlists</span>
                 </a>
             </div>
         </div>
@@ -76,9 +75,8 @@
             <h1 class="homeTitle">Skankin Music<br>Adele</h1>
             <p>Released 1 June</p>
            <div class="musicOptions">
-            <a href="./playMusic.html" class="playPreview">
-                <i class="bi bi-play-circle-fill"></i> 
-                <span>Listen to demo</span>              
+            <a href="./userPlay.html" class="playPreview">
+                <i class="bi bi-play-circle-fill"></i>               
             </a>
             <a type="button" class="likeSong">
                 <ion-icon class="like" name="heart-outline"></ion-icon>              
@@ -213,7 +211,118 @@
         </div>
     </section>
 
+    <section class="popularMusic container">
+        <div class="heading">
+            <h2 class="headingTitle">Popular Music</h2>
+        </div>
+
+        <!-- music content -->
+       
+            <div class="musicContent">
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music1.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Big Emcee- Mic Check</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                                <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
     
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music2.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Money Bagg - Pink rolls</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                                <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music3.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Eve - Capture</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                            <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music4.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Bird group - Bird Song</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                            <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music5.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Nipsey Hussle - Double up</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                                <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music6.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Miss Spice - Come Over</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                            <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music7.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Fashawn - Guess Who</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                                <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="newMusicBox">
+                    <img class="newMusicBoxImg" src="./media/images/music photos/music8.jpg" alt="">
+                    <div class="newMusicText">
+                        <h2 class="musicTitle">Bid Dawg - Try me</h2>
+                        <span class="genre">Afro Beats</span>
+                        <a href="" class="playPreview playSong">
+                            <i class="bi bi-play-circle"></i>
+                                <ion-icon class="like" name="heart-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+
+    </section>
+
+    <!-- next -->
+    <div class="nextPage">
+        <a href="" class="nextButton">Next Page</a>
+    </div>
 
     <section class="foot">
         <!-- Footer -->
@@ -250,7 +359,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/admin.js"></script>
 </body>
 
 </html>
